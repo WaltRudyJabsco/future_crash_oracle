@@ -35,7 +35,7 @@ If you prefer a model with fewer built-in guardrails, you can also experiment wi
 
 Clone this repository:
 
-git clone https://github.com/WaltRudyJabsco/future-crash-oracle.git
+git clone https://github.com/WaltRudyJabsco/future_crash_oracle.git
 cd future-crash-oracle
 
 Run it:
