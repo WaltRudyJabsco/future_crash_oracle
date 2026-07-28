@@ -1,2 +1,86 @@
-# future_crash_oracle.py
+Future Crash Oracle
+
 A tiny fictional operating system for your terminal.
+
+Future Crash Oracle is a single Python program that turns a terminal window into a living retro-futuristic workstation.
+
+It watches your machine, generates observations, dispenses Unix fortunes, talks through a local AI model, occasionally dreams, occasionally panics, and generally behaves like a slightly malfunctioning computer from an alternate 1980s.
+
+Features
+
+* Matrix rain
+* Live system telemetry
+* Ask the Oracle (local AI)
+* Machine Memory
+* Dream Mode
+* Signal Room
+* Panic button
+* CRT reboot animations
+* Unix fortune + cowsay
+* One Python file
+
+Installation
+
+Use Homebrew (or your preferred package manager):
+
+brew install fortune cowsay ollama
+
+Download a model for Ollama.
+
+A great all-around choice:
+
+ollama pull qwen3:8b
+
+If you prefer a model with fewer built-in guardrails, you can also experiment with community models such as Wizard Vicuna Uncensored or other compatible Ollama models. Different models have different capabilities, personalities, and safety characteristics, so choose one that matches how you want to use the Oracle.
+
+Clone this repository:
+
+git clone https://github.com/WaltRudyJabsco/future-crash-oracle.git
+cd future-crash-oracle
+
+Run it:
+
+python3 future_crash_oracle.py --ollama --model qwen3:8b
+
+The program expects standard Homebrew locations by default (for example /opt/homebrew/bin on Apple Silicon), but it will also work if the utilities are available on your shell’s PATH.
+
+Optional: create a shortcut
+
+Add an alias to your ~/.zshrc:
+
+alias rzt='python3 "/path/to/future_crash_oracle.py" --ollama --model qwen3:8b'
+
+Reload your shell:
+
+source ~/.zshrc
+
+Now simply type:
+
+rzt
+
+from anywhere.
+
+Keyboard
+
+Key	Action
+A	Ask the Oracle
+Space	New Fortune
+M	Machine Memory
+S	Signal Room
+T	Terminal Constellation
+D	Dream Mode
+:	Command Console
+P	Panic
+O	Toggle Ollama
+Esc	Return
+Q	Quit
+
+Philosophy
+
+Future Crash Oracle isn’t trying to simulate a real operating system.
+
+It’s trying to feel like you found a forgotten workstation from an alternate future—part system monitor, part AI companion, part science-fiction movie prop.
+
+Leave it running on a spare monitor. Ask it questions. Press Panic only when absolutely necessary.
+
+(You will press Panic.)
