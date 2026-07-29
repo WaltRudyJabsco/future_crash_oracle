@@ -300,8 +300,6 @@ COW_VARIANTS = [
     ["             ___", "            /   |", "           |  o  |", "           |  _  |", "           |_____|"],
 ]
 
-Paste this directly after your existing content block. It only extends the current collections, so it will not overwrite or remove anything.
-
 # Second content expansion: more randomness, same machinery.
 BOOT_LINES.extend([
     "Negotiating cursor access with the foreground",
@@ -699,8 +697,6 @@ COW_VARIANTS.extend([
         "          ||",
     ],
 ])
-
-This approximately doubles the hand-authored randomness while preserving every existing item and all current behavior.
 
 def command_path(name: str) -> str | None:
     """Find Homebrew and system commands even under a sparse alias environment."""
