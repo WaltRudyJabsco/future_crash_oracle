@@ -1,3 +1,34 @@
+# Future Crash Oracle prototypes
+
+A collection of standalone terminal experiments. The current combined Fabric
+application lives in [FutureCrash-LOOK](https://github.com/WaltRudyJabsco/FutureCrash-LOOK). These scripts have separate
+interfaces and version labels; they are not alternate launchers for that bundle.
+
+| Entry point | Interface |
+|---|---|
+| `future_crash.py` | Future Crash Zero prototype |
+| `future_crash_oracle.py` | MONAN OS 12.0 Oracle Radio |
+| `future_crash_oracle_web.py` | MONAN OS web-enabled variant |
+| `oracle_california85.py` | Coastal Workstation 85.2 |
+| `oracle_sound_system_dub.py` | Dub Selector 2.2 |
+
+```sh
+python3 future_crash_oracle.py --help
+python3 future_crash_oracle.py --mute --boot-seconds 0
+```
+
+The radio's `--ollama` flag enables occasional AI thoughts; it is a boolean,
+whereas `future_crash.py --ollama URL` selects a server address. Check each
+script's help before reusing flags between variants. Audio is optional.
+[CLI reference](docs/CLI.md) contains help captured from all five scripts.
+
+![MONAN OS Oracle Radio](screenshots/Current.png)
+
+Fresh terminal capture from this source, with an isolated demo home, audio muted
+and Ollama thoughts disabled. Historical screenshots and notes follow.
+
+---
+
 <img width="1353" height="813" alt="Screenshot 2026-07-28 at 5 52 09 PM" src="https://github.com/user-attachments/assets/fb7b077f-61b3-4bd0-88ce-5d72e2a5b143" />
 
 Future Crash Oracle
